@@ -213,7 +213,12 @@ export const PRODUCTS: Product[] = [
       },
     ],
     applications: ['Offices', 'Hotels', 'Meeting rooms', 'Home cinema walls', 'Bars', 'Retail shops'],
-    image: GRILLE_PHOTO,
+    image: {
+      src: '/images/products/polyester-wall.jpg',
+      alt: 'Four polyester fibre acoustic grille finishes: walnut, light oak, black and honey oak',
+      width: 1008,
+      height: 778,
+    },
     metaTitle: 'Polyester Fibre Acoustic Grille Panels, 2400 × 605 × 21 mm',
     metaDescription:
       'Polyester felt and MDF slat acoustic grille panels with veneer, melamine and PVC finishes. See sizes, felt colours and acoustic data, then request a quote.',
@@ -236,6 +241,12 @@ export const PRODUCTS: Product[] = [
       { label: 'Sizes and slot layout', value: 'Confirmed with the quotation for each project' },
     ],
     applications: ['Hotels', 'Offices', 'Home cinema walls', 'Bars'],
+    image: {
+      src: '/images/products/light-integrated-wall.jpg',
+      alt: 'Black acoustic grille wall with vertical light slots, shown beside a leather chair',
+      width: 821,
+      height: 1008,
+    },
     metaTitle: 'Light-Integrated Acoustic Grille with Linear Light Slots',
     metaDescription:
       'Acoustic grille panels with linear light slots for lobbies, media walls and receptions. Send your wall size to request a quote.',
@@ -285,7 +296,13 @@ export const PRODUCTS: Product[] = [
       { label: 'Custom patterns', value: 'Available on request' },
     ],
     applications: ['Villa feature walls', 'Retail shops', 'Meeting rooms', 'Bars'],
-    image: PATTERN_SHEET,
+    image: {
+      src: '/images/hero/02-artistic-chevron.jpg',
+      alt: 'Chevron acoustic wood panel above a sofa',
+      width: 1280,
+      height: 720,
+    },
+    extraImages: [PATTERN_SHEET],
     metaTitle: 'Artistic Acoustic Panels in Chevron, Wave and Lattice Patterns',
     metaDescription:
       'Wood-and-felt pattern panels in chevron, wave, lattice and geometric designs, in 1200 and 2400 mm cuts. Request a quote or a custom pattern.',

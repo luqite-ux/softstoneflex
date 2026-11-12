@@ -36,8 +36,9 @@ function specList(value: ProductRow['specs'], fallback: Spec[]): Spec[] {
 }
 
 function withRemoteImage(image: CatalogImage | undefined, imageUrl: string | null) {
-  if (!image || !imageUrl?.startsWith('https://')) return image
-  return { ...image, src: imageUrl }
+  if (!imageUrl?.startsWith('https://')) return image
+  if (!image) return { src: imageUrl, alt: '', width: 1200, height: 900 }
+  return { src: imageUrl, alt: image.alt, width: image.width, height: image.height }
 }
 
 function overlay(local: Product, row: ProductRow): Product {
@@ -53,7 +54,7 @@ function overlay(local: Product, row: ProductRow): Product {
     highlights,
     applications,
     specs: specList(row.specs, local.specs),
-    image: withRemoteImage(local.image, row.image_url),
+    image: local.image ?? withRemoteImage(undefined, row.image_url),
     metaTitle: row.extra_data?.metaTitle || local.metaTitle,
     metaDescription: row.extra_data?.metaDescription || local.metaDescription,
     group: row.extra_data?.group || local.group,

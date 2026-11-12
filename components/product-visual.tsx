@@ -14,7 +14,7 @@ export function ProductVisual({ product, index, className, priority }: ProductVi
   return (
     <div className={cn('relative aspect-[4/3] w-full overflow-hidden bg-sand', className)}>
       {product.image ? (
-        <CropImage image={product.image} className="p-4" priority={priority} />
+        <CropImage image={product.image} priority={priority} />
       ) : (
         <div className="flex size-full flex-col items-start justify-between border border-dashed border-[#B9AC99] p-5 m-0">
           <span className="font-display text-4xl text-ink-soft" aria-hidden="true">
