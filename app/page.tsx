@@ -48,7 +48,7 @@ export default async function HomePage() {
         <SectionHeading
           eyebrow="Products"
           title="Nine panel families, from stone looks to acoustic grilles."
-          lead="Four surface lines are described from the company brief. Acoustic families include the photographs and sizes from the 2026 catalog."
+          lead="Stone, wood and translucent surfaces sit alongside the acoustic grille families from the 2026 catalog."
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((product, index) => (

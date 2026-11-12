@@ -107,6 +107,12 @@ export const PRODUCTS: Product[] = [
       { label: 'Sizes and finishes', value: 'Confirmed with the quotation for each project' },
     ],
     applications: ['Retail shops', 'Shopfronts', 'Renovation of existing rooms', 'Garages'],
+    image: {
+      src: '/images/products/pu-stone-veneer.jpg',
+      alt: 'Irregular beige and grey stone veneer wall',
+      width: 1600,
+      height: 1067,
+    },
     metaTitle: 'PU Stone Veneer for Feature Walls and Shopfronts',
     metaDescription:
       'Lightweight simulated stone surface for feature walls, shopfronts and renovation. Request a quote for pattern customization and bulk supply.',
@@ -129,6 +135,12 @@ export const PRODUCTS: Product[] = [
       { label: 'Sizes and finishes', value: 'Confirmed with the quotation for each project' },
     ],
     applications: ['Retail shops', 'Villa feature walls', 'Shopfronts'],
+    image: {
+      src: '/images/products/simulated-wood.jpg',
+      alt: 'Vertical wood-grain wall panels',
+      width: 1600,
+      height: 1200,
+    },
     metaTitle: 'Simulated Wood Panels for Commercial and Residential Walls',
     metaDescription:
       'Wood-grain decorative panels for commercial and residential walls, supplied to distributors and contractors. Ask for patterns, sizes and project packages.',
@@ -151,6 +163,12 @@ export const PRODUCTS: Product[] = [
       { label: 'Sizes and finishes', value: 'Confirmed with the quotation for each project' },
     ],
     applications: ['Shopfronts', 'Retail shops', 'Hotels'],
+    image: {
+      src: '/images/products/translucent-panels.jpg',
+      alt: 'Backlit translucent stone panels set in a grid',
+      width: 1600,
+      height: 2133,
+    },
     metaTitle: 'Translucent Decorative Panels for Backlit Walls',
     metaDescription:
       'Light-transmitting decorative sheet for feature walls and shopfronts. Share your project size and request a quote from CESELAVE.',
@@ -173,6 +191,12 @@ export const PRODUCTS: Product[] = [
       { label: 'Sizes and finishes', value: 'Confirmed with the quotation for each project' },
     ],
     applications: ['Villa feature walls', 'Shopfronts', 'Renovation of existing rooms'],
+    image: {
+      src: '/images/products/soft-stone-panels.jpg',
+      alt: 'Flat slate stone cladding',
+      width: 1600,
+      height: 1200,
+    },
     metaTitle: 'Soft Stone Panels for Curved and Lightweight Walls',
     metaDescription:
       'Flexible stone-look wall surface for curved and lightweight applications. Request a quote for patterns, sizes and bulk supply.',
@@ -326,10 +350,10 @@ export const PRODUCTS: Product[] = [
     ],
     applications: ['Offices', 'Meeting rooms', 'Schools', 'Home cinema walls'],
     image: {
-      src: '/images/products/p7-pet-grid.jpg',
+      src: '/images/products/pet-wall.jpg',
       alt: 'Grey polyester felt grid acoustic panel wall behind a sofa and side table',
-      ...SPREAD,
-      crop: { x: 0, y: 100, w: 870, h: 1054 },
+      width: 824,
+      height: 768,
     },
     extraImages: [
       {

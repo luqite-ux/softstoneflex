@@ -54,7 +54,7 @@ function overlay(local: Product, row: ProductRow): Product {
     highlights,
     applications,
     specs: specList(row.specs, local.specs),
-    image: local.image ?? withRemoteImage(undefined, row.image_url),
+    image: withRemoteImage(local.image, row.image_url),
     metaTitle: row.extra_data?.metaTitle || local.metaTitle,
     metaDescription: row.extra_data?.metaDescription || local.metaDescription,
     group: row.extra_data?.group || local.group,
